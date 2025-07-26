@@ -1,0 +1,162 @@
+body{
+  font-family: "Philosopher", sans-serif;
+  font-style: normal;
+  background-color:#C00000;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+header{
+  text-align:center;
+  /* Додаємо градієнт поверх фонового зображення для кращої читабельності та тінь */
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), /* Темний градієнт поверх зображення */
+    url(https://cdn.pixabay.com/photo/2017/04/15/23/39/disney-2233636_1280.jpg);
+  background-size: cover;
+  font-size:100%;
+  padding-bottom: 20px; /* Додаємо padding-bottom для кращого вигляду */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Тінь */
+}
+
+header h1{
+  padding-top:100px;
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size:50px;
+}
+
+header p{
+  padding-top:100px;
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size:30px;
+}
+
+nav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+nav a:hover {
+    left: 0;
+}
+.about {
+    top: 20px;
+    background-color: #AD00A4;
+}
+
+.blog {
+    top: 80px;
+    background-color: #E90079;
+}
+
+.projects {
+    top: 140px;
+    background-color: #E90048;
+}
+
+.contact {
+    top: 200px;
+    background-color: #98003D;
+}
+
+.about1 {
+    top: 260px;
+    background-color: #AD00A4;
+}
+
+.blog1 {
+    top: 320px;
+    background-color: #E90079;
+}
+
+.projects1 {
+    top: 380px;
+    background-color: #E90048;
+}
+
+.contac1t1 {
+    top: 440px;
+    background-color: #98003D;
+}
+
+.about2 {
+    top: 500px;
+    background-color: #AD00A4;
+}
+
+.blog2 {
+    top: 560px;
+    background-color: #E90079;
+}
+
+.projects2 {
+    top: 620px;
+    background-color: #E90048;
+}
+
+.contac1t2 {
+    top: 680px;
+    background-color: #98003D;
+}
+
+.opus{
+  margin-left: 55px;
+  margin-right: 55px;
+  font-size:20px;
+  padding-bottom:10px;
+  padding-bottom:100px;
+}
+
+footer{
+  margin-top:170px;
+  text-align:center;
+  /* Додаємо градієнт та тінь */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(114, 0, 0, 0.7)), /* Темний градієнт поверх кольору */
+                    linear-gradient(to bottom, #720000, #C00000); /* Градієнт від світлішого до темнішого */
+  font-size:100%;
+  color:white;
+  padding:30px;
+  font-size:30px;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5); /* Тінь */
+}
+
+h2{
+  padding-top:2px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400px;
+  font-style: normal;
+  color:white;
+  font-size:20px;
+}
+
+#mickey {
+    position: absolute; /* Дозволяє вільно переміщати Міккі */
+    cursor: grab; /* Змінює курсор при наведенні */
+    width: 150px; /* Задайте потрібний розмір */
+    height: auto;
+    top: 50px; /* Початкова позиція */
+    left: 50px; /* Початкова позиція */
+    user-select: none; /* Забороняє виділення тексту/зображення */
+    -webkit-user-drag: none; /* Відключає стандартне перетягування для WebKit браузерів */
+}
+
+#mickey:active {
+    cursor: grabbing; /* Змінює курсор під час перетягування */
+}
