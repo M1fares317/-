@@ -1,0 +1,232 @@
+body{
+  font-family: "Philosopher", sans-serif;
+  font-style: normal;
+  background-color:#9356A0;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header{
+  text-align:center;
+  /* Додано градієнт та тінь */
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), /* Темний градієнт поверх зображення */
+    url(https://64.media.tumblr.com/1928093fc5d01709e0fad4152a55bfb3/3e8b5b4a26a25482-39/s1280x1920/1a015c5b77217158433b08b1da7305e9dc14da6b.png);
+  background-size: cover;
+  font-size:100%;
+  padding-bottom: 20px; /* Додано padding-bottom для кращого вигляду */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Додано тінь */
+}
+
+header h1{
+  padding-top:180px;
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size:35px;
+  margin-left:45px;
+  margin-right:45px;
+}
+
+header p{
+  padding-top:100px;
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size:30px;
+}
+
+nav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color:gold;
+    border-radius: 0 5px 5px 0;
+}
+nav a:hover {
+    left: 0;
+}
+.about {
+    top: 20px;
+    background-color: #58083C;
+    font-size:20px;
+}
+
+.blog {
+    top: 80px;
+    background-color: #58083C;
+}
+
+.projects {
+    top: 140px;
+    background-color: #58083C;
+}
+
+.contact {
+    top: 200px;
+    background-color: #58083C;
+}
+
+.about1 {
+    top: 260px;
+    background-color: #58083C;
+}
+
+.blog1 {
+    top: 320px;
+    background-color: #58083C;
+}
+
+.projects1 {
+    top: 380px;
+    background-color: #58083C;
+}
+
+.contac1t1 {
+    top: 440px;
+    background-color: #58083C;
+}
+
+.about2 {
+    top: 500px;
+    background-color: #58083C;
+}
+
+.blog2 {
+    top: 560px;
+    background-color: #58083C;
+}
+
+.projects2 {
+    top: 620px;
+    background-color: #58083C;
+}
+
+.contac1t2 {
+    top: 680px;
+    background-color: #58083C;
+}
+
+.opus{
+  margin-left: 55px;
+  margin-right: 55px;
+  font-size:20px;
+  padding-bottom:10px;
+  padding-bottom:100px;
+}
+
+footer{
+  margin-top:230px;
+  text-align:center;
+  /* Додано градієнт та тінь */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(114, 76, 157, 0.7)), /* Темний градієнт поверх кольору */
+                    linear-gradient(to bottom, #724C9D, #9356A0); /* Градієнт від світлішого до темнішого */
+  font-size:100%;
+  color:white;
+  padding-bottom:30px;
+  font-size:30px;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5); /* Додано тінь */
+}
+
+.character{
+  background-color:#633251;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* Додано тінь до секції */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.character p{
+  font-family: 'ABeeZee';
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.character li{
+  font-family: 'ABeeZee';
+  margin-bottom:15px;
+  padding-right: 10px;
+  font-size: 23px;
+  color:white;
+  text-align:left;
+}
+
+.iron_man{
+  top: 300px;
+  position: fixed;
+  right: -460px;
+  transition: 0.3s;
+  width: 480px;
+  height:290px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:25px;
+}
+
+.iron_man:hover {
+  right: 0;
+}
+
+h2{
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size:35px;
+  margin-left:45px;
+  margin-right:45px;
+}
+
+
+.character img{
+  border-radius: 10px;
+  margin:10px;
+  float: left;
+  width: 550px;
+  height: 350px;
+}
+
+.character li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'ABeeZee';
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-size: 23px;
+  color: white;
+  text-align: left;
+}
+
+.character1 {
+  border-radius: 10px;
+  margin-left: 10px;
+  float:right;
+  width: 350px;
+  height: 350px;
+}
+
+.character2 img{
+  border-radius: 10px;
+  margin-left:440px;
+  width: 500px;
+  height: 500px;
+  /* Додано тінь до нижньої картинки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
