@@ -1,0 +1,213 @@
+body{
+  font-family: "Philosopher", sans-serif;
+  font-style: normal;
+  background-color:#f7c35e;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header{
+  text-align:center;
+  /* Додаємо градієнт поверх фонового зображення для кращої читабельності */
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url(https://www.film.ru/sites/default/files/styles/epsa_1024x450/public/13550370-832149.jpg);
+  background-size: cover;
+  font-size:100%;
+  padding-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1{
+  padding-top:100px;
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size:30px;
+  margin-left:45px;
+  margin-right:45px;
+}
+
+header p{
+  padding-top:100px;
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  font-size:30px;
+}
+
+nav a {
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+nav a:hover {
+  left: 0;
+}
+.about {
+  top: 20px;
+  background-color: #856f5a;
+  font-size:20px;
+}
+
+.blog {
+  top: 80px;
+  background-color: #856f5a;
+}
+
+.projects {
+  top: 140px;
+  background-color: #856f5a;
+}
+
+.contact {
+  top: 200px;
+  background-color: #856f5a;
+}
+
+.about1 {
+  top: 260px;
+  background-color:#856f5a;
+}
+
+.blog1 {
+  top: 320px;
+  background-color: #856f5a;
+}
+
+.projects1 {
+  top: 380px;
+  background-color: #856f5a;
+}
+
+.contac1t1 {
+  top: 440px;
+  background-color: #856f5a;
+}
+
+.about2 {
+  top: 500px;
+  background-color: #856f5a;
+}
+
+.blog2 {
+  top: 560px;
+  background-color: #856f5a;
+}
+
+.projects2 {
+  top: 620px;
+  background-color: #856f5a;
+}
+
+.contac1t2 {
+  top: 680px;
+  background-color:#856f5a;
+}
+
+.opus{
+  margin-left: 55px;
+  margin-right: 55px;
+  font-size:20px;
+  padding-bottom:10px;
+  padding-bottom:100px;
+}
+
+footer{
+  margin-top:230px;
+  text-align:center;
+  background-color: #611d05;
+  font-size:100%;
+  color:white;
+  padding-bottom:30px;
+  font-size:30px;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.character{
+  background-color:#cdc0b0;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.character p{
+  font-family: 'ABeeZee';
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.iron_man{
+  top: 300px;
+  position: fixed;
+  transition: 0.3s;
+  width: 480px;
+  height:290px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:25px;
+}
+
+h2{
+  margin-bottom:10px;
+  font-family: "Great Vibes", cursive;
+  font-style: normal;
+  color:white;
+  font-size:35px;
+  margin-left:45px;
+  margin-right:45px;
+}
+
+.character img{
+  border-radius: 10px;
+  margin:10px;
+  float: left;
+  width: 85%;
+  height: 60%;
+}
+
+.character li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'ABeeZee';
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-size: 23px;
+  color: white;
+  text-align: left;
+}
+
+.character1 {
+  border-radius: 10px;
+  margin-left: 10px;
+  float:right;
+  width: 350px;
+  height: 350px;
+}
+
+.character2 img{
+  border-radius: 10px;
+  margin-left:440px;
+  width: 350px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
