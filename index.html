@@ -69,14 +69,10 @@
             gifIntervalId = null;
         }
         }
-        // --- Конец новой части ---
-        // Начало перетаскивания или запуск падения
         mickey.addEventListener('mousedown', handleClickOrDragStart);
-        mickey.addEventListener('touchstart', handleClickOrDragStart); // Для мобильных устройств
-        // Отслеживание движения во время перетаскивания
+        mickey.addEventListener('touchstart', handleClickOrDragStart); 
         document.addEventListener('mousemove', drag);
         document.addEventListener('touchmove', drag);
-        // Окончание перетаскивания
         document.addEventListener('mouseup', dragEnd);
         document.addEventListener('touchend', dragEnd);
         document.addEventListener('touchcancel', dragEnd);
@@ -91,7 +87,7 @@
         if (e.target === mickey) {
             if (!isFalling) {
                 isDragging = true;
-                stopGifLoop(); // Останавливаем автоматический перезапуск при перетаскивании
+                stopGifLoop();
             }
         }
         }
@@ -120,71 +116,60 @@
         initialX = xOffset;
         initialY = yOffset;
         isDragging = false;
-        // Продолжаем автоматический перезапуск после окончания перетаскивания,
-        // если Микки не падает (т.к. при падении он уже перезапускается по клику)
         if (!isFalling) {
             startGifLoop();
         }
         }
-
-        // Обработчик события 'click' для точного запуска падения
         mickey.addEventListener('click', function() {
         if (!isFalling) {
             isFalling = true;
-            rotation = 0; // Сбрасываем поворот
-            restartGif(); // Перезапускаем GIF при падении
-            stopGifLoop(); // Останавливаем автоматический перезапуск, пока Микки падает
+            rotation = 0;
+            restartGif();
+            stopGifLoop();
         }
         });
 
-
-        // --- Дополнительный функционал (Пассивное движение и Падение) ---
         function animateMickey() {
         if (isFalling) {
             // Логика падения
-            yOffset += fallSpeed; // Увеличиваем Y для падения вниз
-            rotation += 5; // Постепенно увеличиваем угол поворота
+            yOffset += fallSpeed;
+            rotation += 5;
 
-            // Если Микки ушел за нижний край, сбрасываем его наверх
             if (yOffset > window.innerHeight) {
-                isFalling = false; // Останавливаем падение
-                yOffset = -mickey.offsetHeight; // Появляется сверху
+                isFalling = false;
+                yOffset = -mickey.offsetHeight;
                 xOffset = Math.random() * (window.innerWidth - mickey.offsetWidth);
-                rotation = 0; // Сбрасываем поворот
-                restartGif(); // Перезапускаем GIF, когда он появляется сверху
-                startGifLoop(); // Снова запускаем автоматический перезапуск
+                rotation = 0;
+                restartGif();
+                startGifLoop();
             }
             setTransform(xOffset, yOffset, rotation, mickey);
 
-        } else if (!isDragging) { // Пассивное движение только если не падает и не перетаскивается
+        } else if (!isDragging) {
             let newX = xOffset + (directionX * speed);
             let newY = yOffset + (directionY * speed);
 
-            // Получаем размеры окна
             const maxX = window.innerWidth - mickey.offsetWidth;
             const maxY = window.innerHeight - mickey.offsetHeight;
 
-            // Отскок от краев по X
             if (newX > maxX || newX < 0) {
-                directionX *= -1; // Меняем направление
-                newX = Math.max(0, Math.min(newX, maxX)); // Корректируем позицию
+                directionX *= -1;
+                newX = Math.max(0, Math.min(newX, maxX));
             }
 
-            // Отскок от краев по Y
             if (newY > maxY || newY < 0) {
-                directionY *= -1; // Меняем направление
-                newY = Math.max(0, Math.min(newY, maxY)); // Корректируем позицию
+                directionY *= -1;
+                newY = Math.max(0, Math.min(newY, maxY));
             }
 
             xOffset = newX;
             yOffset = newY;
             setTransform(xOffset, yOffset, rotation, mickey);
         }
-        requestAnimationFrame(animateMickey); // Запускаем анимацию в следующем кадре
+        requestAnimationFrame(animateMickey);
         }
-        // Запускаем анимацию и автоматический перезапуск GIF при загрузке страницы
         animateMickey();
-        startGifLoop(); // <-- Запускаем цикл GIF сразу при загрузке страницы
+        startGifLoop();
     </script>
     </main>
     <footer>
